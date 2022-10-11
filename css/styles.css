@@ -1,9 +1,17 @@
 @font-face {
-    font-family: "Avenir Next";
-    src: url("../fonts/AvenirNextLTPro-Regular.otf"); format
+  font-family: "Avenir Next";
+  src: url("../fonts/AvenirNextLTPro-Regular.otf");
 }
 
-
 body {
-    font-family: "Avenir Next"; 
+  font-family: "Avenir Next";
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: #153d4d;
 }
