@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Avenir Next";
+    src: url("../fonts/AvenirNextLTPro-Regular.otf"); format
+}
+
+
+body {
+    font-family: "Avenir Next"; 
+}
