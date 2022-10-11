@@ -20,6 +20,9 @@ nav a {
   color: #153d4d;
 }
 
+header a img {
+  width: 200px;
+}
 /* Home page */
 .top {
   background-image: url("../images/background-picture.jpg");
