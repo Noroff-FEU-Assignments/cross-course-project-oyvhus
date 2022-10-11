@@ -6,6 +6,11 @@
 body {
   font-family: "Avenir Next";
 }
+
+h1 {
+  font-size: 1em;
+  padding: 30px 50px 50px 30px;
+}
 nav li {
   display: inline-block;
 }
