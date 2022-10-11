@@ -6,7 +6,6 @@
 body {
   font-family: "Avenir Next";
 }
-
 nav li {
   display: inline-block;
 }
@@ -14,4 +13,15 @@ nav li {
 nav a {
   text-decoration: none;
   color: #153d4d;
+}
+
+/* Home page */
+.top {
+  background-image: url("../images/background-picture.jpg");
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  background-position-x: right;
+  background-position-y: top;
+  background-repeat: no-repeat;
 }
