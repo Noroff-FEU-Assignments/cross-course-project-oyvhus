@@ -55,6 +55,7 @@ header a img {
 .product-list img {
   width: 100%;
 }
-.jacket {
-  display: grid;
+
+.jacket p {
+  margin: 0;
 }
