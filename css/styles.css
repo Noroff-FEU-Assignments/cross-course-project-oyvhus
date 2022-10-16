@@ -98,15 +98,33 @@ header a img {
   margin: 0;
 }
 
-/*
 @media (min-width: 600px) {
-  nav li {
-    display: inline-block;
+  header label {
+    display: none;
   }
 
+  header {
+    position: static;
+    justify-content: left;
+  }
+  nav {
+    display: inline-block;
+    position: static;
+  }
+
+  nav li {
+    display: inline-block;
+    width: 60px;
+    margin: 9px;
+    padding: 5px 20px;
+    border: none;
+    text-transform: none;
+
+  }
+
+
+  }
   .product-list {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
-*/
