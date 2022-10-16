@@ -1,4 +1,4 @@
-.@font-face {
+@font-face {
   font-family: "Avenir Next";
   src: url("../fonts/AvenirNextLTPro-Regular.otf");
 }
@@ -47,7 +47,7 @@ header a img {
 
 .product-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 150px;
   margin: 150px 110px;
 }
@@ -58,4 +58,10 @@ header a img {
 
 .jacket p {
   margin: 0;
+}
+
+@media (min-width: 600px) {
+  .product-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
