@@ -77,10 +77,18 @@ header a img {
   background-image: url("../images/background-picture.jpg");
   background-size: cover;
   position: relative;
-  min-height: 100vh;
-  background-position-x: right;
+  min-height: 80vh;
+  background-position-x: left;
   background-position-y: top;
   background-repeat: no-repeat;
+}
+
+.slogan {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 5%;
+  left: 15%;
+  
 }
 
 .product-list {
@@ -114,12 +122,11 @@ header a img {
 
   nav li {
     display: inline-block;
-    width: 60px;
+    width: 50px;
     margin: 9px;
     padding: 5px 20px;
     border: none;
     text-transform: none;
-
   }
 
 
@@ -127,4 +134,5 @@ header a img {
   .product-list {
     grid-template-columns: repeat(3, 1fr);
   }
+
 }
