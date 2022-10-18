@@ -72,6 +72,31 @@ nav a {
 header a img {
   width: 100px;
 }
+
+footer {
+  background-color: #266F8C;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  height: fit-content;
+
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+footer, 
+footer h3 {
+  font-size: 1em;
+
+}
+.footer-about,
+.footer-contact {
+  padding: 20px 20px;
+}
 /* Home page */
 .top {
   background-image: url("../images/background-picture.jpg");
@@ -88,14 +113,13 @@ header a img {
   position: absolute;
   top: 5%;
   left: 15%;
-  
 }
 
 .product-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 150px;
-  margin: 150px 110px;
+  grid-gap: 100px;
+  margin: 40px;
 }
 
 .product-list img {
@@ -128,11 +152,22 @@ header a img {
     border: none;
     text-transform: none;
   }
-
-
-  }
   .product-list {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  footer {
+    justify-content: normal;
+  }
+  .footer-contact, 
+  .footer-about{
+    margin: 0 40px;
+  }
+  }
+
+  
+
+
+
 
 }
