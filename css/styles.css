@@ -20,15 +20,18 @@ header {
   align-items: center;
 }
 
+label {
+  font-size: 2.5rem;
+}
+label,
+.logo {
+  padding: 10px 20px 0 20px;
+}
 nav {
   position: absolute;
   z-index: 999;
   right: 0;
 }
-label {
-  font-size: 2.5rem;
-}
-
 nav,
 #menu-checkbox {
   display: none;
@@ -38,10 +41,6 @@ nav,
   display: block;
 }
 
-label,
-.logo {
-  padding: 10px 20px 0 20px;
-}
 nav ul {
   margin: 0;
   padding: 0;
@@ -73,13 +72,32 @@ header a img {
   width: 100px;
 }
 
+.cta {
+  background-color: #256d8a;
+  color: #fff;
+  font-weight: bolder;
+  padding: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.cta-top {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px 22px;
+  font-size: 1.2em;
+}
+.top {
+  position: relative;
+}
 footer {
-  background-color: #266F8C;
+  background-color: #266f8c;
   color: #fff;
   display: flex;
   justify-content: space-around;
   height: fit-content;
-
 }
 
 footer a {
@@ -88,10 +106,9 @@ footer a {
   display: block;
 }
 
-footer, 
+footer,
 footer h3 {
   font-size: 1em;
-
 }
 .footer-about,
 .footer-contact {
@@ -152,6 +169,15 @@ footer h3 {
     border: none;
     text-transform: none;
   }
+
+  .cta-top {
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 60px;
+    font-size: 1.2em;
+  }
+
   .product-list {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -159,15 +185,9 @@ footer h3 {
   footer {
     justify-content: normal;
   }
-  .footer-contact, 
-  .footer-about{
+
+  .footer-contact,
+  .footer-about {
     margin: 0 40px;
   }
-  }
-
-  
-
-
-
-
 }
