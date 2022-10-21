@@ -72,6 +72,10 @@ header a img {
   width: 100px;
 }
 
+.jacket {
+  text-decoration: none;
+  color: #0e2833;
+}
 .cta {
   background-color: #256d8a;
   color: #fff;
