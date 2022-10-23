@@ -64,9 +64,6 @@ nav a {
   color: #153d4d;
   font-weight: bold;
 }
-#menu-checkbox {
-  display: none;
-}
 
 header a img {
   width: 100px;
@@ -90,12 +87,33 @@ header a img {
   bottom: 60px;
   left: 50%;
   transform: translateX(-50%);
-  padding: 20px 22px;
-  font-size: 1.2em;
+  padding: 13px 13px;
 }
 .top {
   position: relative;
 }
+
+#show-more,
+.jacket7 {
+  display: none;
+}
+
+#show-more:checked ~ .jacket7 {
+  display: block;
+}
+#show-more:checked ~ .cta-show_more {
+  display: none;
+}
+
+.cta-show_more:hover {
+  text-decoration: underline;
+}
+.cta-show_more {
+  padding: 13px;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
 footer {
   background-color: #266f8c;
   color: #fff;
@@ -184,6 +202,9 @@ footer h3 {
 
   .product-list {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .cta-show_more {
+    padding: 15px;
   }
 
   footer {
