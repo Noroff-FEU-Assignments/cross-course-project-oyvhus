@@ -169,6 +169,59 @@ footer h3 {
   margin: 0;
 }
 
+/*Check-out page*/
+.summary-jacket {
+  height: 10%;
+}
+
+.order-summary,
+.shipping-info,
+.shipping-method,
+.payment {
+  margin: 20px 20px;
+  max-width: 500px;
+}
+label {
+  font-size: 1em;
+  margin-left: 1px;
+  padding: 5px 0;
+}
+
+input {
+  padding: 5px;
+  margin: 1px 2px 5px 2px;
+  width: 70%;
+}
+
+.shipping-info_details,
+.shipping-method {
+  display: flex;
+  flex-direction: column;
+}
+
+.method {
+  display: flex;
+  flex-direction: row;
+}
+.method input {
+  border: 0;
+  width: 6%;
+  height: 1.5em;
+}
+
+.method p {
+  right: auto;
+}
+
+.summary-total {
+  display: flex;
+  flex-direction: row;
+}
+.payment {
+  background-color: #bababa;
+  color: #737779;
+}
+
 @media (min-width: 600px) {
   header label {
     display: none;
