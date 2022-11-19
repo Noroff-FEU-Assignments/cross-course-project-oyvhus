@@ -222,6 +222,52 @@ input {
   color: #737779;
 }
 
+/*Product page*/
+
+.product-page {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 40px;
+}
+
+.product-page h1 {
+  font-size: 2rem;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.cta-select_size,
+.product-page,
+.price {
+  color: #1f3c4b;
+  font-weight: bold;
+}
+
+.product-description {
+  display: flex;
+  flex-direction: column;
+}
+.product-description > * {
+  margin: 0;
+}
+.product-description ul {
+  padding: 0 20px;
+}
+.price {
+  font-size: 1.5rem;
+}
+
+.cta-select_size {
+  border: solid #1f3c4b;
+  padding: 6;
+  text-decoration: none;
+}
+
+.cta-add_to_chart {
+  padding: 15px 20px;
+  width: 125px;
+  margin: 20px 0;
+}
 @media (min-width: 600px) {
   header label {
     display: none;
