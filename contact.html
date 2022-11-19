@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta name="description" content="The contact page for rainydays">
@@ -5,7 +6,6 @@
     <link href="css/styles.css" rel="stylesheet">
     <title>Rainydays | Contact</title>
     <script src="https://kit.fontawesome.com/2614904b82.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
     <header>
@@ -23,8 +23,30 @@
         </nav>
         </div>
     </header>
-    <main>
-        <h1>The contact page will show here</h1>
+    <main class="contact">
+        <h1>Contact us</h1>
+        <form method="POST">
+            <div class="form-wrapper">
+                <section>
+                    <label id="fullname" name="full-name">Full Name</label>
+                    <input class="text" for="fullname" type="text" name="full-name">
+                    <label name="email">Email</label>
+                    <input class="text" type="text" name="email">
+                   <div>
+                        <input type="checkbox" id="subscribe">
+                        <label for="subscribe">Sign up for email updates</label>
+                    </div>
+                </section>
+                <section>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message">Message</textarea>
+                </section>
+            </div>
+            <input type="submit" value="Send Now" class="cta">
+                </section>
+            </div>
+
+        </form>
     </main>
     <footer>
         <div class="footer-about">
