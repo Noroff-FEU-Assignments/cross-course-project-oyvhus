@@ -28,24 +28,33 @@
 <body>
     <main>
         <section>
-            <form>
+            <form class=payment-page>
                 <fieldset>
                     <legend>3. Payment</legend>
-                    <p>Add paument details:</p>
-                    <input type="radio" name="choose-payment" value="invoice" id="invoice">
-                    <label for="invoice">Invoice (free)</label>
-                    <input type="radio" name="choose-payment" value="card" id="card">
-                <label for="card">Credit/debit card (free)</label>
-               
-                <input type="text" name="card type">
-                <input type="text" name="card number">
-                <input type="text" name="Name on card">
-                <input type="text" name="Security code">
-                <input type="text" name="Expiration date">
-
-                <input type="radio" name="choose-payment" value="PayPal" id="PayPal">
-                <label for="Pay-Pal">Pay Pal(free)</label>
-                <input type="submit" value="Confirm and pay">
+                    <p>Add payment details:</p>
+                    <div class="container_payment-type">
+                        <div class="payment-type">
+                            <input type="radio" name="choose-payment" value="invoice" id="invoice">
+                            <label for="invoice">Invoice (free)</label>
+                        </div>
+                        <div class="payment-type credit-card">
+                            <input type="radio" name="choose-payment" value="card" id="card">
+                            <label for="card">Credit/debit card (free)</label>
+                        </div>
+                            <div class="credit-card-details">
+                                <input type="text" name="card type">
+                                <input type="text" name="card number">
+                                <input type="text" name="Name on card">
+                                <input type="text" name="Security code">
+                                <input type="text" name="Expiration date">
+                            </div>
+                        <div class="payment-type">
+                            <input type="radio" name="choose-payment" value="PayPal" id="PayPal">
+                            <label for="Pay-Pal">Pay Pal(free)</label>
+                        </div>
+                    </div>
+                    
+                    <input type="submit" value="Confirm and pay" class="cta cta-confirm">
     </main>
 </body>
 </html>
