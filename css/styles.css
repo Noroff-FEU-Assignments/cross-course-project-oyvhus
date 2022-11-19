@@ -5,6 +5,7 @@
 
 body {
   font-family: "Avenir Next";
+  color: #1f3c4b;
 }
 
 h1 {
@@ -69,6 +70,10 @@ header a img {
   width: 100px;
 }
 
+p {
+  color: #1f3c4b;
+}
+
 .jacket {
   text-decoration: none;
   color: #0e2833;
@@ -114,6 +119,11 @@ header a img {
   font-size: 0.7rem;
 }
 
+.summary-total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 footer {
   background-color: #266f8c;
   color: #fff;
@@ -213,10 +223,6 @@ input {
   right: auto;
 }
 
-.summary-total {
-  display: flex;
-  flex-direction: row;
-}
 .payment {
   background-color: #bababa;
   color: #737779;
@@ -268,6 +274,51 @@ input {
   width: 125px;
   margin: 20px 0;
 }
+
+/*added to chart page*/
+
+.container-added_to_chart {
+  margin: 40px;
+}
+.chosen-product {
+  display: flex;
+  flex-direction: row;
+}
+
+.chosen-product img {
+  height: 150px;
+}
+
+}
+.chosen-product-specifics {
+  display: block;
+}
+
+.chosen-product-specifics p {
+  margin: 0;
+}
+.container-added_to_chart {
+  position: relative;
+}
+.container-cta {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 17%;
+  top: 120%;
+}
+.cta-go_to_checkout,
+.cta-continue_shopping {
+  margin: 5px;
+  width: 200px;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.container-summary_total {
+  margin: 40px 0 0 40px;
+}
+
 @media (min-width: 600px) {
   header label {
     display: none;
