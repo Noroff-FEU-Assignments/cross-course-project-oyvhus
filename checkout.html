@@ -27,77 +27,32 @@
     </header>
     <main>
         <p>Continue shopping</p>
-        <section class="order-summary">
-        <fieldset>
-        <h2>Order summary</h2>
-        <p>Items:</p>
-        <img src="images/RainyDays_Jacket1.png" alt="picture of jacket 1" class="summery-jacket">
-        <div>
-        <p>Jacket 1</p>
-        <p>Size S</p>
-        <select name="quantity" id="quantity">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-        </select>
-        <p>Delete </p>
-        </div>
-       
-        <div class="summary-total">
-            <p>Subtotal:</p>
-            <p>$60.00</p>
-        </div>
-        <div class="summary-total">
-            <p>Shipping:</p>
-            <p>$50</p>
-        </div>
-        <div class="summary-total">
-            <p>Tax:</p>
-            <p>$0.00</p>
-        </div>
-        <div class="summary-total">
-            <p>Total(USD):</p>
-            <p>$65.00</p>
-        </div>
-        </fieldset>
-         </section>
-         
-         <section class="shipping-info">
-            <form method="POST">
+            <form method="POST" class="shipping-info">
                 <fieldset>
+                    <legend>1. Shipping Info</legend>
                     <div class="shipping-info_details">
-                    <legend class="">1. Shipping Info</legend>
-                    <p>Sign in or register for faster check out</p>
-                    <label for="firstname">First name:</label>
-                    <input type="text" name="firstname" id="firstname">
-                    <label for="lastname">Last name:</label>
-                    <input type="text" name="lastname">
-                    <label for="adress1">Adress:</label>
-                    <input type="text" name="adress1">
-                    <input type="text" name="adress2">
-                    <label for="city">City:</label>
-                    <input type="text" name="city">
-                    <label for="postalcode">Postal code:</label>
-                    <input type="text" name="postalcode">
-                    <label for="email">E-mail:</label>
-                    <input type="email" name="email">
-                    <label for="phonenumber">Phone number:</label>
-                    <input type="number" name="phonenumber">
-                    <input type="submit" value="continue">
+                        <label for="firstname">First name:</label>
+                        <input type="text" name="firstname" id="firstname">
+                        <label for="lastname">Last name:</label>
+                        <input type="text" name="lastname">
+                        <label for="adress1">Adress:</label>
+                        <input type="text" name="adress1">
+                        <input type="text" name="adress2">
+                        <label for="city">City:</label>
+                        <input type="text" name="city">
+                        <label for="postalcode">Postal code:</label>
+                        <input type="text" name="postalcode">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email">
+                        <label for="phonenumber">Phone number:</label>
+                        <input type="number" name="phonenumber">
                     </div>
                 </fieldset>
             </form>
-        </section>
-
-        <section>
             <form method="POST" class="shipping-method">
                 <fieldset>
-                <legend>2. Shipping method</legend>
-                    <label type="radio" for="shipping-method">Select shipping method</label>
+                <legend>2. Shipping method:</legend>
+                    <label type="radio" for="shipping-method">Select shipping method:</label>
                     <div class="method">
                     <input type="radio" name="shipping-method" value="Standard-Home-Delivery" id="Standard-Home-Delivery">
                     <label for="Standard-Home-Delivery">Standard Home Delivery</label>
@@ -105,7 +60,7 @@
                 </div>
                 <div class="method">
                     <input type="radio" name="shipping-method" value="Postal-office" id="Postal-office">
-                    <label for="Postal-office">Postal Office</label>
+                    <label for="Postal-office" class="postal-office">Postal Office</label>
                     <label for="Postal-office">§0.00</label>
                 </div>
                 <div class="method">
@@ -113,10 +68,12 @@
                     <label for="ExpressHome-Delivery">Express Home Delivery</label>
                     <label for="ExpressHome-Delivery">§7.00</label>
                 </div>
-                <input type="submit" value="Continue-to-payment">
+                <div class="method method-cta">
+                    <a href="payment.html" class="cta cta-continue_to_payment">Continue to payment </a>
+                </div>
             </fieldset>
             </form>
-        </section>
+        
         <section class="payment">
         <fieldset>
             <h2>3. Payment</h2>
