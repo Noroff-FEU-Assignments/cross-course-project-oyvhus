@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-  font-size: 1em;
+  font-size: 2.5em;
   padding: 30px 50px 50px 30px;
 }
 
@@ -210,6 +210,7 @@ legend {
 .shipping-method {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .payment-type .method {
@@ -239,6 +240,9 @@ legend {
   font-size: 0.8rem;
   justify-content: center;
   margin: 50px;
+}
+.cta-continue_to_payment {
+margin: 0px;
 }
 
 .payment {
@@ -322,34 +326,44 @@ legend {
 
 .container-added_to_chart {
   margin: 40px;
+  max-width: 500px;
+}
+.container-added_to_chart > * {
+  justify-content: flex-start;
+}
+
+.container-added_to_chart h1 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+  margin-bottom: 60px;
 }
 .chosen-product {
   display: flex;
   flex-direction: row;
+  max-width: 600px;
 }
 
 .chosen-product img {
-  height: 150px;
+  width: 60%;
 }
+
 
 .chosen-product-specifics {
   display: block;
 }
 
-.chosen-product-specifics p {
+.chosen-product-specifics p,
+.chosen-product-specifics h3 {
   margin: 0;
-}
-
-.container-added_to_chart {
-  position: relative;
 }
 
 .container-cta {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  right: 17%;
-  top: 120%;
+  align-items: center;
 }
 
 .cta-go_to_checkout,
@@ -365,17 +379,29 @@ legend {
 }
 
 /* checkout page*/
-
-/*contact*/
-.contact {
-  max-width: 1000px;
+.added-page,
+.contact,
+.checkout-page,
+.payment-main,
+.about-page {
+  max-width: 500px;
   margin: auto;
   text-align: center;
 }
 
+/*About page */
+.about-us{
+  text-align: center;
+  margin: 50px;
+  
+}
+/*contact*/
+
 .form-wrapper {
   display: flex;
+  flex-direction: column;
   text-align: left;
+  margin: 20px 40px 40px 40px;
 }
 
 .form-wrapper > * {
@@ -384,8 +410,17 @@ legend {
   flex-direction: column;
 }
 
+.checkbox-signup {
+  display: inline;
+}
+#subscribe {
+  padding: 0;
+  border: 0;
+  width: 6%;
+  height: 1.5em;
+}
 textarea {
-  height: 100%;
+  height: 150px;
 }
 
 @media (min-width: 600px) {
@@ -455,4 +490,10 @@ textarea {
   .product-page img {
     width: 50%;
   }
+
+  .container-added_to_chart {
+    margin: 0 100px;
+  }
+
+  C
 }
