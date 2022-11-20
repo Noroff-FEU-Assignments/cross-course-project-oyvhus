@@ -242,7 +242,7 @@ legend {
   margin: 50px;
 }
 .cta-continue_to_payment {
-margin: 0px;
+  margin: 0px;
 }
 
 .payment {
@@ -350,7 +350,6 @@ margin: 0px;
   width: 60%;
 }
 
-
 .chosen-product-specifics {
   display: block;
 }
@@ -390,10 +389,9 @@ margin: 0px;
 }
 
 /*About page */
-.about-us{
+.about-us {
   text-align: center;
   margin: 50px;
-  
 }
 /*contact*/
 
@@ -494,6 +492,4 @@ textarea {
   .container-added_to_chart {
     margin: 0 100px;
   }
-
-  C
 }
