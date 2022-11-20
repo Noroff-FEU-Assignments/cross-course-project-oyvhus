@@ -21,7 +21,7 @@ header {
   align-items: center;
 }
 
-label {
+header div label {
   font-size: 2.5rem;
 }
 label,
@@ -212,8 +212,7 @@ legend {
   flex-direction: column;
 }
 
-.payment-type
-.method {
+.payment-type .method {
   display: flex;
   flex-direction: row;
   margin: 20px;
@@ -232,33 +231,29 @@ legend {
 .postal-office {
   padding: 5px 80px 0 0;
 }
-  
-  .method-cta,
-  .cta-confirm,
-  .cta-continue_to_payment {
-    padding: 9px;
-    font-size: 0.8rem;
-    justify-content: center;
-    margin: 50px;
-  }
 
-  .payment {
-    background-color: #bababa;
-    color: #737779;
-  }
+.method-cta,
+.cta-confirm,
+.cta-continue_to_payment {
+  padding: 9px;
+  font-size: 0.8rem;
+  justify-content: center;
+  margin: 50px;
+}
 
-  /*payment page*/
- 
-  .payment-page {
-    ;
-  }
+.payment {
+  background-color: #bababa;
+  color: #737779;
+}
 
-  .container_payment-type{
-    display: flex;
-    flex-direction: column;
-  }
+/*payment page*/
 
-  .payment-type{
+.container_payment-type {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-type {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -273,70 +268,70 @@ legend {
 }
 
 #card:checked ~ .credit-card-details {
-  display: block:
+  display: block;
 }
 
-  /*Product page*/
+/*Product page*/
 
-  .product-page {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 40px;
-  }
-
-  .product-page h1 {
-    font-size: 2rem;
-    padding: 0;
-    margin: 20px 0;
-  }
-
-  .cta-select_size,
-  .product-page,
-  .price {
-    color: #1f3c4b;
-    font-weight: bold;
-  }
-
-  .product-description {
-    display: flex;
-    flex-direction: column;
-  }
-  .product-description > * {
-    margin: 0;
-  }
-  .product-description ul {
-    padding: 0 20px;
-  }
-  .price {
-    font-size: 1.5rem;
-  }
-
-  .cta-select_size {
-    border: solid #1f3c4b;
-    padding: 6;
-    text-decoration: none;
-  }
-
-  .cta-add_to_chart {
-    padding: 15px 20px;
-    width: 125px;
-    margin: 20px 0;
-  }
-
-  /*added to chart page*/
-
-  .container-added_to_chart {
-    margin: 40px;
-  }
-  .chosen-product {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .chosen-product img {
-    height: 150px;
-  }
+.product-text,
+.product-description,
+.product-page {
+  display: flex;
+  flex-direction: column;
 }
+
+.product-page {
+  margin: 20px 40px;
+}
+
+.product-page h1 {
+  font-size: 2rem;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.cta-select_size,
+.product-page,
+.price {
+  color: #1f3c4b;
+  font-weight: bold;
+}
+.product-description > * {
+  margin: 0;
+}
+.product-description ul {
+  padding: 0 20px;
+}
+.price {
+  font-size: 1.5rem;
+}
+
+.cta-select_size {
+  border: solid #1f3c4b;
+  padding: 6;
+  text-decoration: none;
+}
+
+.cta-add_to_chart {
+  padding: 15px 20px;
+  width: 125px;
+  margin: 20px 0;
+}
+
+/*added to chart page*/
+
+.container-added_to_chart {
+  margin: 40px;
+}
+.chosen-product {
+  display: flex;
+  flex-direction: row;
+}
+
+.chosen-product img {
+  height: 150px;
+}
+
 .chosen-product-specifics {
   display: block;
 }
@@ -344,9 +339,11 @@ legend {
 .chosen-product-specifics p {
   margin: 0;
 }
+
 .container-added_to_chart {
   position: relative;
 }
+
 .container-cta {
   display: flex;
   flex-direction: column;
@@ -354,6 +351,7 @@ legend {
   right: 17%;
   top: 120%;
 }
+
 .cta-go_to_checkout,
 .cta-continue_shopping {
   margin: 5px;
@@ -389,6 +387,7 @@ legend {
 textarea {
   height: 100%;
 }
+
 @media (min-width: 600px) {
   header label {
     display: none;
@@ -398,6 +397,7 @@ textarea {
     position: static;
     justify-content: left;
   }
+
   nav {
     display: inline-block;
     position: static;
@@ -423,6 +423,7 @@ textarea {
   .product-list {
     grid-template-columns: repeat(3, 1fr);
   }
+
   .cta-show_more {
     padding: 15px;
   }
@@ -434,5 +435,24 @@ textarea {
   .footer-contact,
   .footer-about {
     margin: 0 40px;
+  }
+
+  .product-page {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    margin: 50px auto;
+  }
+
+  .product-page > * {
+    flex: 1;
+    margin: 0 20px;
+  }
+
+  .product-text {
+    justify-content: end;
+  }
+  .product-page img {
+    width: 50%;
   }
 }
